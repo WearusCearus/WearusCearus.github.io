@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Isaac Soles — CS Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap');
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -192,8 +193,7 @@
       font-family: 'DM Mono', monospace; font-size: 0.72rem;
     }
 
-    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.55s ease, transform 0.55s ease; }
-    .fade-in.visible { opacity: 1; transform: none; }
+
 
     @media (max-width: 600px) {
       .nav-links { display: none; }
@@ -216,10 +216,10 @@
 
   <div class="container">
 
-    <section id="hero" class="fade-in">
+    <section id="hero">
       <p class="hero-label">Computer Science Student &amp; Developer</p>
       <h1>Isaac<br/><em>Soles.</em></h1>
-      <p class="subtitle">I build full-stack web applications and love turning ideas into working software. Currently studying CS and open to internships and new-grad opportunities.</p>
+      <p class="subtitle">I build full-stack web applications and love turning ideas into working software. Currently studying CS at CSUCI and open to internships and new-grad opportunities.</p>
       <div class="hero-ctas">
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
@@ -230,17 +230,17 @@
       </div>
     </section>
 
-    <section id="about" class="fade-in">
+    <section id="about">
       <p class="section-label">01 — About</p>
       <h2>A little about me</h2>
       <div class="about-text">
-        <p>I'm a Computer Science student with a passion for building things that live on the web. From designing databases to wiring up APIs and crafting clean front-end interfaces, I enjoy working across the full stack.</p>
+        <p>I'm a Computer Science student at California State University Channel Islands with a passion for building things that live on the web. From designing databases to wiring up APIs and crafting clean front-end interfaces, I enjoy working across the full stack.</p>
         <p>When I'm not coding, I work at my school's IT lounge helping students and staff troubleshoot technical issues — which has sharpened my problem-solving instincts and communication skills as much as any class has.</p>
         <p>I'm actively looking for internship and new-grad roles where I can contribute, keep learning, and build software that matters.</p>
       </div>
     </section>
 
-    <section id="skills" class="fade-in">
+    <section id="skills">
       <p class="section-label">02 — Skills</p>
       <h2>Technologies &amp; tools</h2>
       <div class="skills-grid">
@@ -289,7 +289,7 @@
       </div>
     </section>
 
-    <section id="experience" class="fade-in">
+    <section id="experience">
       <p class="section-label">03 — Experience</p>
       <h2>Where I've worked</h2>
 
@@ -310,14 +310,14 @@
       <div class="exp-item">
         <div class="exp-date">Ongoing</div>
         <div class="exp-content">
-          <h3>California State University Channel Islands B.S. Computer Science</h3>
-          <div class="exp-role">Student</div>
+          <h3>California State University Channel Islands</h3>
+          <div class="exp-role">B.S. Computer Science</div>
           <p>Coursework spanning data structures, algorithms, systems programming, databases, and software engineering. Applying classroom concepts to real-world projects.</p>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="fade-in">
+    <section id="projects">
       <p class="section-label">04 — Projects</p>
       <h2>Things I've built</h2>
       <div class="project-list">
@@ -380,20 +380,20 @@
       </div>
     </section>
 
-    <section id="resume-section" class="fade-in" style="text-align:center">
+    <section id="resume-section" style="text-align:center">
       <p class="section-label" style="text-align:center">05 — Résumé</p>
       <h2>Download my résumé</h2>
       <p style="color:var(--muted);margin-bottom:2rem;font-size:0.95rem;">Want a full overview of my education, experience, and skills? Grab a copy below.</p>
       <a href="resume.pdf" class="btn btn-primary" download>Download Résumé (PDF)</a>
     </section>
 
-    <section id="contact" class="fade-in">
+    <section id="contact">
       <p class="section-label">06 — Contact</p>
       <h2>Let's connect</h2>
       <div class="contact-grid">
-        <a href="mailto:isaac112702@gmail.com" class="contact-card">
+        <a href="/cdn-cgi/l/email-protection#a3cad0c2c2c0929291949391e3c4cec2cacf8dc0ccce" class="contact-card">
           <span class="contact-label">Email</span>
-          <span class="contact-value">isaac112702@gmail.com</span>
+          <span class="contact-value"><span class="__cf_email__" data-cfemail="8ce5ffededefbdbdbebbbcbeccebe1ede5e0a2efe3e1">[email&#160;protected]</span></span>
         </a>
         <a href="https://github.com/WearusCearus" class="contact-card" target="_blank">
           <span class="contact-label">GitHub</span>
@@ -408,18 +408,3 @@
           <span class="contact-value">thepokefolio.vercel.app</span>
         </a>
       </div>
-    </section>
-
-  </div>
-
-  <footer>© 2026 Isaac Soles — Built with HTML, CSS &amp; care.</footer>
-
-  <script>
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
-  </script>
-
-</body>
-</html>

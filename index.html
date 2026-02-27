@@ -44,7 +44,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 8%;
+      padding: 0 48px;
       z-index: 100;
     }
 
@@ -73,9 +73,9 @@
 
     nav ul a:hover { color: var(--accent); }
     .wrap {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 0 8%;
+      padding: 0 48px;
     }
 
     section { padding: 100px 0 80px; }
@@ -378,7 +378,7 @@
     }
     footer {
       border-top: 1px solid var(--border);
-      padding: 2rem 8%;
+      padding: 2rem 48px;
       text-align: center;
       color: var(--muted);
       font-family: 'DM Mono', monospace;
@@ -386,6 +386,9 @@
     }
     @media (max-width: 600px) {
       nav ul { display: none; }
+      nav { padding: 0 24px; }
+      .wrap { padding: 0 24px; }
+      footer { padding: 2rem 24px; }
       .exp { grid-template-columns: 1fr; gap: 0.3rem; }
     }
 
